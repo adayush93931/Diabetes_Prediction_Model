@@ -6,16 +6,53 @@ Briefly describe the purpose and goals of your diabetes prediction project.
 
 ## Project Structure
 
-Outline the structure of your project repository. Include important directories and files.
+diabetes_prediction_project/
+|-- data/
+|   |-- raw/
+|       |-- diabetes_data.csv  # Raw data file
+|   |-- processed/
+|       |-- cleaned_data.csv  # Processed and cleaned data
+|-- notebooks/
+|   |-- exploratory_data_analysis.ipynb  # Jupyter notebook for data exploration
+|   |-- feature_engineering.ipynb  # Jupyter notebook for feature engineering
+|-- src/
+|   |-- __init__.py
+|   |-- data_preprocessing.py  # Module for data cleaning and preprocessing
+|   |-- feature_engineering.py  # Module for feature engineering
+|   |-- model_training.py  # Module for training the diabetes prediction model
+|   |-- model_evaluation.py  # Module for evaluating the model
+|-- models/
+|   |-- trained_model.pkl  # Saved trained model file
+|-- requirements.txt  # List of dependencies for the project
+|-- config.yaml  # Configuration file for hyperparameters, settings, etc.
+|-- scripts/
+|   |-- run_model_training.py  # Script to run the model training process
+|   |-- run_model_evaluation.py  # Script to run model evaluation
+|-- README.md  # Project documentation
+|-- LICENSE  # License file
+
 
 
 ## Dataset
 
-Provide information about the dataset used in your project. Include a link to the dataset source, data preprocessing steps, and any relevant statistics.
+Data set can be downloaded from kaggle . 
 
 ## Data Preprocessing
+Load data from the markdown file.
+Explore and understand the data.
+Handle missing values.
+Encode categorical variables.
+Scale numerical features.
+Perform feature engineering if needed.
+Handle outliers.
+Split the data into training and testing sets.
+Address imbalanced data if applicable.
+Normalize data if necessary.
+Ensure data is in the right format for the model.
+Save preprocessing information for deployment.
 
-Explain the steps taken to clean and preprocess the data. This may include handling missing values, feature scaling, encoding categorical variables, etc.
+
+
 
 ## Exploratory Data Analysis (EDA)
 
@@ -28,22 +65,6 @@ Describe the machine learning model(s) used for diabetes prediction. Include inf
 ## Model Evaluation
 
 Present the evaluation metrics used to assess the performance of your model(s). Include accuracy, precision, recall, F1-score, and any other relevant metrics. Discuss the results and any potential areas for improvement.
-
-## Deployment
-
-If your model is deployed or can be deployed, provide instructions or details on how to do so. Include any necessary dependencies and deployment considerations.
-
-## Usage
-
-Explain how to use your code or model for making predictions. Include sample code if necessary.
-
-## Acknowledgements
-
-Give credit to any external libraries, datasets, or resources that you used in your project.
-
-## License
-
-Specify the license under which your project is distributed.
 
 ## Contact
 
